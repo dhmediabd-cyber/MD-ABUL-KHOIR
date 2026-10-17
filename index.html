@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إشعار أجير - Ajeer Permit</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .document-container {
+            width: 800px;
+            background: #ffffff;
+            padding: 30px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header-logos {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .header-logos img {
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .qr-code img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .notice-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1a4d2e;
+        }
+
+        .intro-text {
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Section Tables Styles */
+        .section-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 8px 12px;
+            border: 1px solid #dddddd;
+            text-align: right;
+            color: #1a4d2e;
+        }
+
+        .section-table td {
+            border: 1px solid #dddddd;
+            padding: 8px 12px;
+            font-size: 13px;
+            vertical-align: middle;
+        }
+
+        .label-cell {
+            background-color: #fafafa;
+            font-weight: bold;
+            width: 30%;
+        }
+
+        .value-cell {
+            width: 70%;
+        }
+
+        .en-text {
+            display: block;
+            font-size: 11px;
+            color: #666;
+            direction: ltr;
+            text-align: right;
+        }
+
+        /* Declarations Section */
+        .declarations {
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .declarations h4 {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #1a4d2e;
+        }
+
+        .declarations ol {
+            padding-right: 20px;
+        }
+
+        .footer-note {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: #1a4d2e;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="document-container">
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="qr-code">
+            <!-- QR Code Image -->
+            <img src="qr-code.png" alt="QR Code">
+        </div>
+        <div class="header-logos">
+            <!-- Replace these srcs with your uploaded images in GitHub -->
+            <img src="ministry-logo.png" alt="وزارة الموارد البشرية والتنمية الاجتماعية">
+            <img src="ajeer-logo.png" alt="أجير Ajeer">
+        </div>
+    </div>
+
+    <div class="notice-title">
+        إشعار أجير حلول الموارد البشرية
+    </div>
+
+    <div class="intro-text">
+        تشعركم أنه تم التعاقد من قبلنا كجهة مقدمة للخدمة مع الجهة المستفيدة من الخدمة حسب المعلومات المبينة أدناه، ولذلك تم تسجيل معلومات العقد لتكون بحوزة العامل لإثبات عدم مخالفته لنظام العمل ولتقديمها إلى من يهمه الأمر من الجهات المختصة عند طلبها للتحقق من صحة تواجده في مكان تقديم الخدمة.
+    </div>
+
+    <!-- 1. Laborer Information -->
+    <table class="section-table">
+        <tr>
+            <th colspan="2" class="section-header">
+                بيانات العامل <span class="en-text">Laborer Information</span>
+            </th>
+        </tr>
+        <tr>
+            <td class="label-cell">اسم العامل <span class="en-text">Laborer Name</span></td>
+            <td class="value-cell">MD ABUL KHOIR</td>
+        </tr>
+        <tr>
+            <td class="label-cell">المهنة <span class="en-text">Occupation</span></td>
+            <td class="value-cell">عامل تحميل وتنزيل</td>
+        </tr>
+        <tr>
+            <td class="label-cell">الجنسية <span class="en-text">Nationality</span></td>
+            <td class="value-cell">بنجلاديش</td>
+        </tr>
+        <tr>
+            <td class="label-cell">رقم الهوية / الإقامة <span class="en-text">ID Number</span></td>
+            <td class="value-cell">2576812313</td>
+        </tr>
+    </table>
+
+    <!-- 2. Provider Information -->
+    <table class="section-table">
+        <tr>
+            <th colspan="2" class="section-header">
+                بيانات مقدم الخدمة <span class="en-text">Provider Information</span>
+            </th>
+        </tr>
+        <tr>
+            <td class="label-cell">المنشأة المقدمة للخدمة <span class="en-text">Provider Establishment</span></td>
+            <td class="value-cell">شركة الشموخ البارز للمقاولات العامة</td>
+        </tr>
+        <tr>
+            <td class="label-cell">رقم المنشأة في وزارة الموارد البشرية والتنمية الاجتماعية <span class="en-text">Establishment Number</span></td>
+            <td class="value-cell">6-1801831</td>
+        </tr>
+    </table>
+
+    <!-- 3. Beneficiary Information -->
+    <table class="section-table">
+        <tr>
+            <th colspan="2" class="section-header">
+                بيانات المستفيد من الخدمة <span class="en-text">Beneficiary Information</span>
+            </th>
+        </tr>
+        <tr>
+            <td class="label-cell">المنشأة المستفيدة من الخدمة <span class="en-text">Beneficiary Establishment</span></td>
+            <td class="value-cell">مطعم تنورة المدينة لتقديم الوجبات</td>
+        </tr>
+        <tr>
+            <td class="label-cell">رقم المنشأة في وزارة الموارد البشرية والتنمية الاجتماعية <span class="en-text">Establishment Number</span></td>
+            <td class="value-cell">6-1964403</td>
+        </tr>
+    </table>
+
+    <!-- 4. Permit Information -->
+    <table class="section-table">
+        <tr>
+            <th colspan="2" class="section-header">
+                بيانات التصريح <span class="en-text">Permit Information</span>
+            </th>
+        </tr>
+        <tr>
+            <td class="label-cell">تاريخ بداية التصريح <span class="en-text">Permit Start Date</span></td>
+            <td class="value-cell">2026-10-11</td>
+        </tr>
+        <tr>
+            <td class="label-cell">تاريخ نهاية التصريح <span class="en-text">Permit End Date</span></td>
+            <td class="value-cell">2027-01-10</td>
+        </tr>
+    </table>
+
+    <!-- Declarations -->
+    <div class="declarations">
+        <h4>إقرارات:</h4>
+        <ol>
+            <li>أقر أنا المنشأة المقدمة للخدمة والموضحة بياناتي أعلاه وأتعهد بأن العامل حامل هذا التصريح بحمله له يقر ويتعهد بأن البيانات المدونة فيه صحيحة على مسؤوليته الشخصية، وأنه يعمل لدى المنشأة ولحسابها، بموجب رخصة إقامة سارية المفعول، وأتحمل أي تبعات قانونية أو غرامات تترتب على خلاف المذكور أعلاه.</li>
+            <li>الالتزام والتقيد بأنظمة العمل والعمال وأي أنظمة ولوائح وقرارات أخرى ذات علاقة.</li>
+            <li>أن الموقع الإلكتروني الخاص بأجير حلول الموارد البشرية أو القائمين عليه عبارة عن وسيط إلكتروني ما بين الباحثين عن العمل وأصحاب الأعمال فقط دون أي التزام قانوني أو غيره على القائمين على موقع أجير.</li>
+            <li>أي تعديل أو كشط في هذا التصريح يجعله لاغياً.</li>
+        </ol>
+    </div>
+
+    <div class="footer-note">
+        * خدمة معتمدة من وزارة الموارد البشرية والتنمية الاجتماعية
+    </div>
+
+</div>
+
+</body>
+</html>
